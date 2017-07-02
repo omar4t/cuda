@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'TitilliumBold';
+    src: url('fonts/TitilliumBold.eot');
+    src: url('fonts/TitilliumBold.eot') format('embedded-opentype'),
+         url('fonts/TitilliumBold.woff2') format('woff2'),
+         url('fonts/TitilliumBold.woff') format('woff'),
+         url('fonts/TitilliumBold.ttf') format('truetype'),
+         url('fonts/TitilliumBold.svg#TitilliumBold') format('svg');
+}
+
+
+
+
+@font-face {
+    font-family: 'TitilliumSemibold';
+    src: url('fonts/TitilliumSemibold.eot');
+    src: url('fonts/TitilliumSemibold.eot') format('embedded-opentype'),
+         url('fonts/TitilliumSemibold.woff2') format('woff2'),
+         url('fonts/TitilliumSemibold.woff') format('woff'),
+         url('fonts/TitilliumSemibold.ttf') format('truetype'),
+         url('fonts/TitilliumSemibold.svg#TitilliumSemibold') format('svg');
+}
+
+
+
+
+@font-face {
+    font-family: 'TitilliumRegular';
+    src: url('fonts/TitilliumRegular.eot');
+    src: url('fonts/TitilliumRegular.eot') format('embedded-opentype'),
+         url('fonts/TitilliumRegular.woff2') format('woff2'),
+         url('fonts/TitilliumRegular.woff') format('woff'),
+         url('fonts/TitilliumRegular.ttf') format('truetype'),
+         url('fonts/TitilliumRegular.svg#TitilliumRegular') format('svg');
+}
+
+
+
+@font-face {
+    font-family: 'TitilliumLight';
+    src: url('fonts/TitilliumLight.eot');
+    src: url('fonts/TitilliumLight.eot') format('embedded-opentype'),
+         url('fonts/TitilliumLight.woff2') format('woff2'),
+         url('fonts/TitilliumLight.woff') format('woff'),
+         url('fonts/TitilliumLight.ttf') format('truetype'),
+         url('fonts/TitilliumLight.svg#TitilliumLight') format('svg');
+}
+
+
+
+@font-face {
+    font-family: 'TitilliumRegularItalic';
+    src: url('fonts/TitilliumRegularItalic.eot');
+    src: url('fonts/TitilliumRegularItalic.eot') format('embedded-opentype'),
+         url('fonts/TitilliumRegularItalic.woff2') format('woff2'),
+         url('fonts/TitilliumRegularItalic.woff') format('woff'),
+         url('fonts/TitilliumRegularItalic.ttf') format('truetype'),
+         url('fonts/TitilliumRegularItalic.svg#TitilliumRegularItalic') format('svg');
+}

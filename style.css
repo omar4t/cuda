@@ -1,0 +1,993 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* ************************************************************************************************************ */
+/*                                                  Reset CSS                                                   */
+/* ************************************************************************************************************ */
+
+
+body {
+    font-size: 16px;
+}
+
+.structure {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 10px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 10px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+/* ************************************************************************************************************ */
+/*                                          This CSS For Header Area                                            */
+/* ************************************************************************************************************ */
+
+
+
+.header_area {
+    background: none repeat scroll 0 0 #87509c;
+    min-height: 160px;
+    padding-top: 55px;
+}
+
+.header {
+
+}
+
+.logo {
+
+}
+
+.logo img {
+
+}
+
+.mainmenu {
+
+}
+
+.mainmenu ul#nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mainmenu ul#nav li {
+    float: left;
+}
+
+.mainmenu ul#nav li a {
+    border-radius: 5px;
+    color: #ffffff;
+    display: block;
+    margin: 5px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-family: 'TitilliumRegular';
+}
+
+.mainmenu ul#nav li a:hover, .mainmenu ul#nav li a.active {
+    color: none;
+    background: #643A79;
+}
+
+
+
+
+
+/* ************************************************************************************************************ */
+/*                                          This CSS For Slider Area                                            */
+/* ************************************************************************************************************ */
+
+
+
+.slider_area {
+    background: none repeat scroll 0 0 #87509c;
+    height: 460px;
+    overflow: hidden;
+    padding: 145px 0;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider p {
+    font-size: 42px;
+    color: #f7f3ea;
+    line-height: 40px;
+    font-family: 'TitilliumBold';
+}
+
+.slider a {
+    background: none repeat scroll 0 0 #eb7d4b;
+    border-bottom: 4px solid #c86a40;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 18px;
+    left: 410px;
+    padding: 10px 35px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 150px;
+    font-family: 'TitilliumSemibold';
+}
+
+
+
+
+/* ************************************************************************************************************ */
+/*                                          This CSS For Services Area                                          */
+/* ************************************************************************************************************ */
+
+
+
+.services_area {
+    background: none repeat scroll 0 0 #17c2a4;
+    margin-top: -20px;
+    padding: 120px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.services {}
+
+.service_text {
+    position: relative;
+}
+
+.service_text h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.service_text p {
+    line-height: 10px;
+}
+
+.border_one {
+    background: none repeat scroll 0 0 #14a58c;
+    height: 4px;
+    left: 485px;
+    margin-top: 15px;
+    position: absolute;
+    top: 45px;
+    width: 87px;
+}
+
+.single_service {
+    float: left;
+    padding-top: 25px;
+    width: 260px;
+}
+
+.single_service img {
+    padding: 60px 0;
+}
+
+.single_service h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.single_service p {}
+
+
+
+
+
+
+/* ************************************************************************************************************ */
+/*                                          This CSS For Author Area                                            */
+/* ************************************************************************************************************ */
+
+
+
+.author_area {
+    background: #E7F1F8;
+    padding: 120px 0;
+    text-align: center;
+    color: #3c4761;
+}
+
+.author {}
+
+.author_text {
+    position: relative;
+}
+
+.author_text h1 {
+    font-size: 41px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.author_text p {
+    font-size: 18px;
+    padding-bottom: 85px;
+}
+
+.border_two {
+    background: none repeat scroll 0 0 #C8D9E5;
+    height: 4px;
+    left: 485px;
+    margin-top: 15px;
+    position: absolute;
+    top: 45px;
+    width: 87px;
+}
+
+.author_details {}
+
+.single_author {
+    float: left;
+    width: 260px;
+}
+
+.single_author img {
+    border-radius: 500px;
+    height: 200px;
+    width: 200px;
+}
+
+.single_author h2.special {
+    color: #27283d;
+}
+
+.single_author h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+.single_author p {}
+
+.single_author p span {
+    color: #30bae7;
+}
+
+.author_social_link {
+    padding-top: 35px;
+}
+
+.author_social_link a {}
+
+.author_social_link a i {
+    background: none repeat scroll 0 0 #bdd1df;
+    border-radius: 50px;
+    color: #fff;
+    height: 32px;
+    padding-top: 8px;
+    width: 32px;
+}
+
+
+
+
+
+
+/* ************************************************************************************************************ */
+/*                                          This CSS For Our Skills Area                                        */
+/* ************************************************************************************************************ */
+
+
+
+.our_skills_area {
+    color: #3c4761;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.our_skills {}
+
+.skills_text {
+    position: relative;
+}
+
+.skills_text h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.skills_text p {
+    font-size: 18px;
+    padding-bottom: 85px;
+}
+
+.border_three {
+    background: none repeat scroll 0 0 #DFE8ED;
+    height: 4px;
+    left: 485px;
+    margin-top: 15px;
+    position: absolute;
+    top: 45px;
+    width: 87px;
+}
+
+.author_skill {}
+
+.single_skill {
+    float: left;
+    width: 260px;
+}
+
+.single_skill h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+/* ************************************************************************************************************ */
+/*                                          This CSS For Our Skills Area                                        */
+/* ************************************************************************************************************ */
+
+
+
+.portfolio_area {
+    background: #FFDD99;
+    padding: 100px 0;
+    text-align: center;
+    color: #393939;
+}
+
+.portfolio {}
+
+.portfolio_text {
+    position: relative;
+}
+
+.portfolio_text h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.portfolio_text p {
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+.border_four {
+    background: none repeat scroll 0 0 #E5C37F;
+    height: 4px;
+    left: 485px;
+    margin-top: 15px;
+    position: absolute;
+    top: 45px;
+    width: 87px;
+}
+
+.portfolio_item {
+    padding-bottom: 60px;
+}
+
+.portfolio_menu {
+    list-style: outside none none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.portfolio_menu li {
+    background: none repeat scroll 0 0 #ebc985;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline;
+    margin: 0 5px;
+    overflow: hidden;
+    padding: 12px 22px;
+    text-transform: uppercase;
+}
+
+.portfolio_menu li:hover,
+.portfolio_menu li.active {
+    background: #fff;
+}
+
+.portfolio_list {}
+
+.portfolio_list a {
+    background: none repeat scroll 0 0 #17c2a4;
+    border-bottom: 4px solid #14a58c;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+}
+
+.single_portfolio {
+    float: left;
+    padding-bottom: 50px;
+    width: 520px;
+}
+
+.single_portfolio img {
+    height: auto;
+    width: 480px;
+}
+
+.single_portfolio p {
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+
+
+
+				/* ================================== This CSS For MixItUp ================================== */
+
+				
+.portfolio_list .mix{
+    display: none;
+}
+
+
+
+
+
+/* ************************************************************************************************************ */
+/*                                          This CSS For About Us Area                                          */
+/* ************************************************************************************************************ */
+
+
+.about_us_area {
+    background: #D74680;
+    padding: 115px 0 0;
+    color: #fff;
+    text-align: center;
+}
+
+.about_us {}
+
+.about_us_text {
+    position: relative;
+}
+
+.about_us_text h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.about_us_text p {
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+.border_five {
+    background: none repeat scroll 0 0 #B73C6D;
+    height: 4px;
+    left: 485px;
+    margin-top: 15px;
+    position: absolute;
+    top: 45px;
+    width: 87px;
+}
+
+.client_description {
+    margin-left: -115px;
+}
+
+.single_description {
+    float: left;
+    margin-bottom: 145px;
+    margin-left: 115px;
+    text-align: left;
+    width: 462px;
+}
+
+.single_description img {
+    border-radius: 100px;
+    float: left;
+    height: 95px;
+    margin-right: 50px;
+    width: 95px;
+}
+
+.single_description p {
+    font-family: 'TitilliumLight';
+    font-size: 21px;
+}
+
+.single_description p span {
+    color: #ffdd99;
+    font-family: "TitilliumRegular";
+    margin: 0 143px;
+    font-size: 18px;
+}
+
+.single_description h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 144px -4px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* ************************************************************************************************************ */
+/*                                          This CSS For Contact Us Area                                        */
+/* ************************************************************************************************************ */
+
+
+
+.contact_us_area {
+    background: #3C5499;
+    padding: 115px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.contact_us {}
+
+.contact_us_text {
+    position: relative;
+}
+
+.contact_us_text h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.contact_us_text p {
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+.border_six {
+    background: none repeat scroll 0 0 #273A71;
+    height: 4px;
+    left: 485px;
+    margin-top: 15px;
+    position: absolute;
+    top: 45px;
+    width: 87px;
+}
+
+.contact_form {}
+
+.contact_form a {
+    background: none repeat scroll 0 0 #30bae7;
+    border-bottom: 4px solid #299ec5;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 45px;
+}
+
+.contact_form input {
+    background: none repeat scroll 0 0 #273a71;
+    border: medium none;
+    margin-right: 40px;
+    padding: 12px;
+    width: 400px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.contact_form .your_name {}
+
+.contact_form .your_email {}
+
+.contact_form textarea {
+    background: none repeat scroll 0 0 #273a71;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    height: 200px;
+    margin-left: 75px;
+    padding: 10px;
+    width: 850px;
+    margin-bottom: 80px;
+}
+
+
+
+
+/* ************************************************************************************************************ */
+/*                                          This CSS For Contact Us Area                                        */
+/* ************************************************************************************************************ */
+
+
+
+.footer_area {
+    border-top: 1px solid #51629D;
+    padding: 45px 0;
+    background: #344B8E;
+}
+
+.footer {}
+
+.footer_menu {}
+
+.footer_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.footer_menu ul li {
+    display: inline-block;
+}
+
+.footer_menu ul li a {
+    color: #fff;
+    display: block;
+    padding: 0 10px;
+}
+
+.footer_menu ul li a:hover {
+    color: #30bae7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
